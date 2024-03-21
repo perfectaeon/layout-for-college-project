@@ -1,8 +1,8 @@
-@font-face {
-    font-family: "Arimo";
-    src: 
-    local("Arimo")
-    url(./fonts/Arimo-Regular.ttf)
+@media (width <= 500px) {
+  
+}
+
+@media (width <= 1440px) {
 }
 * {
     box-sizing: border-box;
@@ -10,8 +10,7 @@
     margin: 0;
 }
 body {
-    padding-left: 110px;
-    padding-right: 110px;
+   
     background-color: 	#CADCFC;
     height: 100%;
     width: 100%;
@@ -48,7 +47,12 @@ footer {
     height: 100%;
     font-size: 32px;
 }
+main {
+    display: flex;
+    justify-content: center;
+}
 .CardsList {
+    width: 80vw;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -61,6 +65,6 @@ footer {
     margin: 10 10 10 10;
     background-color: #fff;
     z-index: 100;
-    width: 400px;
-    height: 570px;
+    width: 20vw;
+    height: 40vh;
 }

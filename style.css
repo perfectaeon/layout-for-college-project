@@ -1,3 +1,35 @@
+@font-face {
+  font-family: ClearSans;
+  src: url(./fonts/20930.ttf);
+}
+@font-face {
+  font-family: GardensCM;
+  src: url(./fonts/20011.ttf);
+}
+.Card {
+  -webkit-box-shadow: 21px 21px 19px 6px rgba(34, 60, 80, 0.18);
+  -moz-box-shadow: 21px 21px 19px 6px rgba(34, 60, 80, 0.18);
+  box-shadow: 21px 21px 19px 6px rgb(0 0 0 / 18%);
+}
+.Card:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: -20px;
+}
+.Card:not(:hover) {
+  margin-top: 0px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+header {
+  font-family: GardensCM;
+}
+footer {
+  font-family: GardensCM;
+}
+.mainText {
+  font-family: ClearSans;
+}
 @media (width <=400px) {
   * {
     box-sizing: border-box;
@@ -22,7 +54,6 @@
 
     font: 200;
     height: 10vh;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff;
   }
   footer {
@@ -30,15 +61,17 @@
 
     font: 200;
     height: 10vh;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff;
   }
   .footertext {
-    padding: 0px 0px 0px 5px;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    justify-content: space-between;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
-    font-size: 32px;
+    font-size: 18px;
   }
   main {
     display: flex;
@@ -46,7 +79,6 @@
     justify-content: center;
   }
   .mainText {
-    height: 100vh;
     display: flex;
     justify-content: center;
   }
@@ -104,26 +136,28 @@
   header {
     display: flex;
     justify-content: center;
-
-    font: 200;
     height: 10vh;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff;
+  }
+  header p {
+    font-size: 40px;
   }
   footer {
     display: flex;
 
     font: 200;
     height: 10vh;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
     background-color: #fff;
   }
   .footertext {
-    padding: 0px 0px 0px 5px;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     height: 100%;
-    font-size: 32px;
+    font-size: 22px;
   }
   main {
     display: flex;
@@ -131,7 +165,6 @@
     justify-content: center;
   }
   .mainText {
-    height: 60vh;
     display: flex;
     justify-content: center;
   }
@@ -147,7 +180,7 @@
     justify-content: space-between;
     font-size: 34px;
     width: 100vw;
-    padding: 40px;
+    padding: 40px 80px 40px 80px;
   }
   .CardsList {
     width: 80vw;
@@ -189,21 +222,24 @@
   header {
     display: flex;
     justify-content: center;
-    font: 40px;
     height: 10vh;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff;
+  }
+  header p {
+    font-size: 60px;
   }
   footer {
     display: flex;
 
     font: 200;
     height: 10vh;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
     background-color: #fff;
   }
   .footertext {
-    padding: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     height: 100%;
@@ -228,7 +264,7 @@
     gap: 30px;
     font-size: 36px;
     width: 80vw;
-    padding: 40px;
+    padding: 40px 70px 40px 70px;
   }
   .CardsList {
     width: 80vw;
@@ -250,7 +286,7 @@
   }
 }
 
-@media (width <= 1920px) and (width >= 1440px) {
+@media (width >= 1440px) {
   * {
     box-sizing: border-box;
     padding: 0;
@@ -259,13 +295,14 @@
   .about-info {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
     font-size: 36px;
     width: 80vw;
-    padding: 40px;
+    padding: 40px 80px 40px 100px;
   }
   body {
-    background-color: #cadcfc;
+    background-color: #eeeeee;
     height: 100%;
     width: 100%;
   }
@@ -280,22 +317,26 @@
   }
   header {
     display: flex;
-
-    font: 200;
+    justify-content: center;
     height: 10vh;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff;
+    border-bottom: 2px solid black;
+  }
+  header p {
+    font-size: 65px;
   }
   footer {
     display: flex;
 
     font: 200;
     height: 10vh;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
     background-color: #fff;
   }
   .footertext {
-    padding: 0px 0px 0px 5px;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     height: 100%;

@@ -11,6 +11,7 @@
   -moz-box-shadow: 21px 21px 19px 6px rgba(34, 60, 80, 0.18);
   box-shadow: 21px 21px 19px 6px rgb(0 0 0 / 18%);
 }
+
 .Card:hover {
   transition: 0.5s;
   cursor: pointer;
@@ -106,12 +107,24 @@ footer {
     align-items: center;
   }
   .Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     border-radius: 20px;
     margin: 10 10 10 10;
     background-color: #fff;
     z-index: 100;
     width: 60vw;
     height: 40vh;
+  }
+  .Card img {
+    width: 55vw;
+    height: 20vh;
+  }
+  .Card h4 {
+    font-size: 30px;
+    font-family: GardensCM;
   }
 }
 @media (width <= 510px) and (width > 400px) {
@@ -193,12 +206,24 @@ footer {
     align-items: center;
   }
   .Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     border-radius: 20px;
     margin: 10 10 10 10;
     background-color: #fff;
     z-index: 100;
     width: 60vw;
     height: 40vh;
+  }
+  .Card img {
+    width: 55vw;
+    height: 20vh;
+  }
+  .Card h4 {
+    font-size: 40px;
+    font-family: GardensCM;
   }
 }
 @media (width > 510px) and (width <= 1440px) {
@@ -277,12 +302,24 @@ footer {
     justify-content: center;
   }
   .Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     border-radius: 20px;
     margin: 10 10 10 10;
     background-color: #fff;
     z-index: 100;
     width: 33vw;
     height: 40vh;
+  }
+  .Card img {
+    width: 27vw;
+    height: 20vh;
+  }
+  .Card h4 {
+    font-size: 40px;
+    font-family: GardensCM;
   }
 }
 
@@ -365,11 +402,23 @@ footer {
     justify-content: center;
   }
   .Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     border-radius: 20px;
     margin: 10 10 10 10;
     background-color: #fff;
     z-index: 100;
     width: 22vw;
     height: 40vh;
+  }
+  .Card img {
+    width: 18vw;
+    height: 20vh;
+  }
+  .Card h4 {
+    font-size: 40px;
+    font-family: GardensCM;
   }
 }
